@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be Mine, Jaan? 💕 </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- Surprise overlay (hidden messages) -->
+  <div class="surprise-overlay hidden" id="surpriseOverlay">
+    <div class="surprise-modal">
+      <button class="surprise-close" id="surpriseClose" aria-label="Close">×</button>
+      <p class="surprise-text" id="surpriseText"></p>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero" id="hero">
+      <div class="floating-hearts" id="floatingHearts"></div>
+      <p class="subtitle">SALE! SALE! SALE! My Heart,Lungs, Kidney, everything exclusively for You on sale💖 </p>
+      <h1 class="title">
+        <span class="title-line">Dear</span>
+        <span class="name-highlight" id="nameHighlight" title="Click me!">Jaan</span>
+        <span class="title-line">,</span>
+      </h1>
+      <p class="tagline">You really make every moment magical ✨</p>
+      <div class="hero-buttons">
+        <button class="cta-btn" id="openLetterBtn">Open My Heart, Lil pyaar se 💌</button>
+        <button class="surprise-btn" id="heroSurpriseBtn"> Something for you 👀</button>
+        <button class="surprise-btn small" id="secretHintBtn">Tap if you're curious 🦋</button>
+      </div>
+    </section>
+
+    <section class="letter-section hidden" id="letterSection">
+      <div class="letter-card">
+        <div class="letter-decoration"></div>
+        <div class="letter-content">
+          <h2>My Dearest Jaan,</h2>
+          <p>
+            From the very first day we met, my life has been brighter because of you. Even after all these years, your smile still lights up my world, your voice is still my favorite sound, and being with you is still my safe haven… and honestly, you still make my heart skip like it did on day one 😘
+            your voice is my favorite sound, and your presence is my safe place.
+          </p>
+          <p>
+            On this <strong>Propose Day</strong>, I want to tell you what I feel every single day —
+            that you are the most beautiful person I know, inside and out. You're kind, strong,
+            and you make me want to be a better person and after all this, they make me fall for you all over again.
+          </p>
+          <p>
+            So here I am, after all these years, asking you once more — will you continue to be mine, forever and always? 
+          </p>
+          <p class="signature"> And Yes… I’m still completely addicted to you. 💕💕</p>
+        </div>
+      </div>
+      <div class="letter-buttons">
+        <button class="cta-btn secondary" id="proposeBtn">Soooo....I have a question for you Motubaby 💝</button>
+        <button class="fun-btn" id="whySayYesBtn">Why you should say yes 💖</button>
+        <button class="fun-btn" id="revealSecretBtn">Reveal a secret message 🔐</button>
+        <button class="fun-btn" id="oneMoreReasonBtn">One more reason I love you ✨</button>
+        <button class="fun-btn" id="complimentBtn">Click for a compliment 🌸</button>
+      </div>
+
+      <!-- Why you should say yes - Placards (revealed on button click) -->
+      <div class="why-section hidden" id="whySection">
+        <h3 class="why-title">Reasons to say yessss, Cutiepie 💕</h3>
+        <div class="placards">
+          <div class="placard" data-delay="0">
+            <span class="placard-icon">💝</span>
+            <h4>I'll always choose you</h4>
+            <p>Every day I'll remind you how special you are. You're not an option — you're my always.</p>
+          </div>
+          <div class="placard" data-delay="1">
+            <span class="placard-icon">🌟</span>
+            <h4>I'll support your dreams</h4>
+            <p>Your goals are my goals. I'll be there to cheer you on and hold your hand through everything.</p>
+          </div>
+          <div class="placard" data-delay="2">
+            <span class="placard-icon">😊</span>
+            <h4>I'll make you smile</h4>
+            <p>Bad days happen — but I'll do my best to turn them around. Your happiness is my mission.</p>
+          </div>
+          <div class="placard" data-delay="3">
+            <span class="placard-icon">🤝</span>
+            <h4>You're my best friend</h4>
+            <p>You're the person I want to tell everything to and share all my gossips and secrets. Laugh with, cry with, and grow old with.</p>
+          </div>
+          <div class="placard" data-delay="4">
+            <span class="placard-icon">💕</span>
+            <h4>I'm falling for you</h4>
+            <p>I fell for you on the very first day and will keep falling for you, even after a thousand years. ⏳❤️.</p>
+          </div>
+        </div>
+        <button class="fun-btn outline" id="hideWhyBtn">Show less</button>
+      </div>
+    </section>
+
+    <section class="proposal-section hidden" id="proposalSection">
+      <div class="proposal-card">
+        <h2 class="proposal-question">Jaan, will you be mine?</h2>
+        <button class="cta-btn why-in-proposal" id="whySayYesProposalBtn">Why you should say yes 💖</button>
+        <div class="why-section-inline hidden" id="whySectionInline">
+          <h3 class="why-title">Reasons to say yessss, Cutiepie 💕</h3>
+          <div class="placards inline-placards">
+            <div class="placard" data-delay="0">
+              <span class="placard-icon">💝</span>
+              <h4>I'll always choose you</h4>
+              <p>You're my always, not my option.</p>
+            </div>
+            <div class="placard" data-delay="1">
+              <span class="placard-icon">🌟</span>
+              <h4>I'll support your dreams</h4>
+              <p>Your goals are my goals.</p>
+            </div>
+            <div class="placard" data-delay="2">
+              <span class="placard-icon">😊</span>
+              <h4>I'll make you smile</h4>
+              <p>Your happiness is my mission.</p>
+            </div>
+            <div class="placard" data-delay="3">
+              <span class="placard-icon">🤝</span>
+              <h4>You're my best friend</h4>
+              <p>Laugh, cry, grow old together.</p>
+            </div>
+            <div class="placard" data-delay="4">
+              <span class="placard-icon">💕</span>
+              <h4>I'm falling for you</h4>
+              <p>I'll keep falling for you, even after a thousand years. ⏳❤️ </p>
+            </div>
+          </div>
+          <button class="fun-btn outline" id="hideWhyInlineBtn">Show less</button>
+        </div>
+        <div class="buttons-row">
+          <button class="answer-btn yes-btn" id="yesBtn">Yes! 💖</button>
+          <button class="answer-btn no-btn" id="noBtn">Maybe later 😅</button>
+        </div>
+        <div class="proposal-extra-buttons">
+          <button class="surprise-btn small" id="proposalSurpriseBtn">Still thinking? Click here 🎀</button>
+          <button class="surprise-btn small" id="finalPitchBtn">One last thing... 📩</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="yes-section hidden" id="yesSection">
+      <div class="celebration">
+        <div class="confetti" id="confetti"></div>
+        <h2 class="celebration-title">You said Yessss! 💘💖💝</h2>
+        <p class="celebration-text">Yes! Now I can officially call you mine, once again… and start annoying you with love, bakchodi and laughter 24/7. Here's to us! 💖💕 </p>
+        <div class="heart-burst" id="heartBurst"></div>
+        <div class="celebration-buttons">
+          <button class="fun-btn" id="yesSurprise1">Another surprise 🎁</button>
+          <button class="fun-btn" id="yesSurprise2">Promise for you 🤝</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="no-section hidden" id="noSection">
+      <div class="tease-card">
+        <p class="tease-text">I checked… But Maybe later is Out of stock So You’re stuck with me and I want you right now 😏💖💕</p>
+        <div class="tease-buttons">
+          <button class="cta-btn" id="tryAgainBtn">Try saying Yes? 💝</button>
+          <button class="fun-btn" id="noSectionWhyBtn">Remind me why to say yes 💖</button>
+          <button class="surprise-btn small" id="noSectionSurpriseBtn">Click here for a suprise 👉</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p> 💕Limited-time offer 💖 Keval Haa bolne tak uplabdh rahega ye offer💕 </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
